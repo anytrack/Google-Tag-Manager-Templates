@@ -1,5 +1,5 @@
 homepage: "https://anytrack.io"
-documentation: "https://support.anytrack.io/hc"
+documentation: "https://support.anytrack.io/hc/en-us/articles/4461968470033-How-to-install-AnyTrack-with-Google-Tag-Manager-nocode-"
 versions:
   - sha: 5f02a788b90ae804f86b04aa24af8937e567874a
     changeNotes: Initial release.
