@@ -1,12 +1,4 @@
-﻿___TERMS_OF_SERVICE___
-
-By creating or modifying this file you agree to Google Tag Manager's Community
-Template Gallery Developer Terms of Service available at
-https://developers.google.com/tag-manager/gallery-tos (or such other URL as
-Google may provide), as modified from time to time.
-
-
-___INFO___
+﻿___INFO___
 
 {
   "type": "TAG",
@@ -65,12 +57,11 @@ ___TEMPLATE_PARAMETERS___
 
 ___SANDBOXED_JS_FOR_WEB_TEMPLATE___
 
-// Enter your template code here.
 const pixelId = data.PropertyID;
+const encodeUri = require('encodeUri');
 const injectScript = require('injectScript');
-//const log = require('logToConsole');
-injectScript('https://assets.anytrack.io/'+pixelId+'.js', data.gtmOnSuccess, data.gtmOnFailure, 'AnyTrack');
-//log('data =', data);
+const url = 'https://assets.anytrack.io/' + encodeUri(pixelId) + '.js';
+injectScript(url, data.gtmOnSuccess, data.gtmOnFailure, 'AnyTrack');
 
 
 ___WEB_PERMISSIONS___
@@ -107,7 +98,18 @@ ___WEB_PERMISSIONS___
 
 ___TESTS___
 
-scenarios: []
+scenarios:
+- name: Should create a valid URL form the propery value
+  code: |-
+    const mockData = {
+      PropertyID: 'kkEEssDDAA00'
+    };
+    const id = mockData.PropertyID;
+
+    runCode(mockData);
+
+    assertApi('encodeUri').wasCalledWith(id);
+    assertApi('injectScript').wasCalled();
 
 
 ___NOTES___
