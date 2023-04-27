@@ -15,5 +15,11 @@
 homepage: "https://anytrack.io"
 documentation: "https://readme.anytrack.io/docs/google-tag-manager"
 versions:
+  # Latest version
+  - sha: 3b261fe0e521b84a873e858d21446dfa4c12e6ac
+    changeNotes: |2
+      Use API to encode Uri.
+      Add basic tests.
+  # Older versions
   - sha: 82fc8f864612ad49c231ac145e77dea8c4633e9d
     changeNotes: Initial release.
