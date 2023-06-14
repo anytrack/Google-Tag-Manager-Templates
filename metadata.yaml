@@ -1,4 +1,4 @@
-# Copyright 2023 AnyTrack LTD
+# Copyright 2023 AnyTrack Analytics Inc
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,10 +16,12 @@ homepage: "https://anytrack.io"
 documentation: "https://readme.anytrack.io/docs/google-tag-manager"
 versions:
   # Latest version
+ - sha: 8f7af11f48f9a6c31d7f9a18c6ccce112ab47604
+   changeNotes: Added license.
+  # Older versions
   - sha: 3b261fe0e521b84a873e858d21446dfa4c12e6ac
     changeNotes: |2
       Use API to encode Uri.
       Add basic tests.
-  # Older versions
   - sha: 82fc8f864612ad49c231ac145e77dea8c4633e9d
     changeNotes: Initial release.
