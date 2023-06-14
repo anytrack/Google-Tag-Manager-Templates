@@ -1,23 +1,9 @@
-# Copyright 2023 AnyTrack Analytics Inc
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     https://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
 homepage: "https://anytrack.io"
 documentation: "https://readme.anytrack.io/docs/google-tag-manager"
 versions:
   # Latest version
- - sha: 8f7af11f48f9a6c31d7f9a18c6ccce112ab47604
-   changeNotes: Added license.
+  - sha: 8f7af11f48f9a6c31d7f9a18c6ccce112ab47604
+    changeNotes: Added license.
   # Older versions
   - sha: 3b261fe0e521b84a873e858d21446dfa4c12e6ac
     changeNotes: |2
