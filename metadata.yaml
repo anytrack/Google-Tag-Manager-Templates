@@ -16,7 +16,7 @@ homepage: "https://anytrack.io"
 documentation: "https://readme.anytrack.io/docs/google-tag-manager"
 versions:
   # Latest version
-  - sha: 8f7af11f48f9a6c31d7f9a18c6ccce112ab47604
+  - sha: bc71fbccc988ea9318495e938038654d2615bff8
     changeNotes: Added license.
   # Older versions
   - sha: 3b261fe0e521b84a873e858d21446dfa4c12e6ac
